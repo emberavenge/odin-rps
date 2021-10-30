@@ -9,12 +9,15 @@
 <body>
     <script>
 
-        let rpsList = ["Rock", "Paper", "Scissors"]
-        let randomItem = rpsList[Math.floor(Math.random()*rpsList.length())]
-        function computerPlay(randomItem) {
-            console.log(randomItem);
+        
+        
+        function computerPlay() {
+            let outputList = ["Rock", "Paper", "Scissors"];
+            let inputList = outputList;
+            let randomList = inputList[Math.floor(Math.random()*inputList.length)];
+            return inputList;
         }
-
+        computerPlay();
     </script>
 </body>
 </html>
