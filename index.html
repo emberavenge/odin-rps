@@ -8,8 +8,11 @@
 </head>
 <body>
     <script>
-        function computerPlay(a) {
-            return a;
+
+        let rpsList = ["Rock", "Paper", "Scissors"]
+        let randomItem = rpsList[Math.floor(Math.random()*rpsList.length())]
+        function computerPlay(randomItem) {
+            console.log(randomItem);
         }
 
     </script>
