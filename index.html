@@ -9,56 +9,61 @@
   <body>
     <button onclick="f()">Play Rock Paper Scissors</button>
     <script>
-      function f() {
-        let rpsPlayer = prompt("Enter a value ");
-        playRound(rpsPlayer, computerPlay());
-      }
+            function f() {
+              let rpsPlayer = prompt("Enter a value ");
+              playRound(rpsPlayer, computerPlay());
+              playRound(rpsPlayer, computerPlay());
+              playRound(rpsPlayer, computerPlay());
+              playRound(rpsPlayer, computerPlay());
+              playRound(rpsPlayer, computerPlay());
+            }
 
-      function computerPlay() {
-        let computerChoice = ["Rock", "Paper", "Scissors"];
-        let computerSelection =
-          computerChoice[Math.floor(Math.random() * computerChoice.length)];
-        return computerSelection;
-      }
+            function computerPlay() {
+              let computerChoice = ["Rock", "Paper", "Scissors"];
+              let computerSelection =
+                computerChoice[Math.floor(Math.random() * computerChoice.length)];
+              return computerSelection;
+            }
 
-      function playRound(playerSelection, computerSelection) {
-        playerRound = playerSelection;
-        playerSelect = playerRound.toLowerCase();
-        if (playerSelect === "rock" && computerSelection === "Scissors") {
-          alert("You win! Rock beats Scissors!");
-          return playerSelect;
-        } else if (playerSelect === "rock" && computerSelection === "Paper") {
-          alert("You lose! Rock loses to Paper!");
-        } else if (playerSelect === "rock" && computerSelection === "Rock") {
-          alert("It's a tie between player and computer");
-        } else if (
-          playerSelect === "paper" &&
-          computerSelection === "Scissors"
-        ) {
-          alert("You lose! Paper loses to Scissors");
-        } else if (playerSelect === "paper" && computerSelection === "Rock") {
-          alert("You win! Paper beats Rock!");
-        } else if (playerSelect === "paper" && computerSelection === "Paper") {
-          alert("It's a tie between player and computer!");
-        } else if (
-          playerSelect === "scissors" &&
-          computerSelection === "Scissors"
-        ) {
-          alert("It's a tie between player and computer");
-        } else if (
-          playerSelect === "scissors" &&
-          computerSelection === "Rock"
-        ) {
-          alert("You lose! Scissors loses to Rock");
-        } else if (
-          playerSelect === "scissors" &&
-          computerSelection === "Paper"
-        ) {
-          alert("You win! Scissors beats Paper!");
-        } else {
-          alert("Sorry bucko");
-        }
-      }
+            function playRound(playerSelection, computerSelection) {
+              playerRound = playerSelection;
+              playerSelect = playerRound.toLowerCase();
+              if (playerSelect === "rock" && computerSelection === "Scissors") {
+                alert("You win! Rock beats Scissors!");
+                return playerSelect;
+              } else if (playerSelect === "rock" && computerSelection === "Paper") {
+                alert("You lose! Rock loses to Paper!");
+              } else if (playerSelect === "rock" && computerSelection === "Rock") {
+                alert("It's a tie between player and computer");
+              } else if (
+                playerSelect === "paper" &&
+                computerSelection === "Scissors"
+              ) {
+                alert("You lose! Paper loses to Scissors");
+              } else if (playerSelect === "paper" && computerSelection === "Rock") {
+                alert("You win! Paper beats Rock!");
+              } else if (playerSelect === "paper" && computerSelection === "Paper") {
+                alert("It's a tie between player and computer!");
+              } else if (
+                playerSelect === "scissors" &&
+                computerSelection === "Scissors"
+              ) {
+                alert("It's a tie between player and computer");
+              } else if (
+                playerSelect === "scissors" &&
+                computerSelection === "Rock"
+              ) {
+                alert("You lose! Scissors loses to Rock");
+              } else if (
+                playerSelect === "scissors" &&
+                computerSelection === "Paper"
+              ) {
+                alert("You win! Scissors beats Paper!");
+              } else {
+                alert("Sorry bucko");
+              }
+            }
+            playRound()
     </script>
   </body>
 </html>
