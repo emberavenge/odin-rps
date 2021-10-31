@@ -10,17 +10,8 @@
     <button onclick="f()">Play Rock Paper Scissors</button>
     <script>
             function f() {
-              let rpsPlayer = prompt("Enter a value ");
+              let rpsPlayer = prompt("Select your choice (Rock/Paper/Scissors): ");
               playRound(rpsPlayer, computerPlay());
-              rpsPlayer = prompt("Enter a value ");
-              playRound(rpsPlayer, computerPlay());
-              rpsPlayer = prompt("Enter a value ");
-              playRound(rpsPlayer, computerPlay());
-              rpsPlayer = prompt("Enter a value ");
-              playRound(rpsPlayer, computerPlay());
-              rpsPlayer = prompt("Enter a value ");
-              playRound(rpsPlayer, computerPlay());
-              
             }
 
             function computerPlay() {
@@ -68,7 +59,6 @@
                 alert("Sorry bucko");
               }
             }
-            playRound()
     </script>
   </body>
 </html>
