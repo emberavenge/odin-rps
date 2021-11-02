@@ -2,6 +2,10 @@
 
 Added a button to the website to allow the prompt alert to show up only when the button is pressed.
 
+Instructions on how to play:
+
+As of right now, pressing the "Play Rock Paper Scissors" button, and then typing your option in the pop-up window.
+
 Stuff I learned:
 - That it's important to look at your code and ask the computer what you're asking it to do. 
 
