@@ -1,64 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock,paper,scissors, SHOOT!</title>
-  </head>
-  <body>
-    <button onclick="f()">Play Rock Paper Scissors</button>
-    <script>
-            function f() {
-              let rpsPlayer = prompt("Select your choice (Rock/Paper/Scissors): ");
-              playRound(rpsPlayer, computerPlay());
-            }
 
-            function computerPlay() {
-              let computerChoice = ["Rock", "Paper", "Scissors"];
-              let computerSelection =
-                computerChoice[Math.floor(Math.random() * computerChoice.length)];
-              return computerSelection;
-            }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock,paper,scissors, SHOOT!</title>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-            function playRound(playerSelection, computerSelection) {
-              playerRound = playerSelection;
-              playerSelect = playerRound.toLowerCase();
-              if (playerSelect === "rock" && computerSelection === "Scissors") {
-                alert("You win! Rock beats Scissors!");
-                return playerSelect;
-              } else if (playerSelect === "rock" && computerSelection === "Paper") {
-                alert("You lose! Rock loses to Paper!");
-              } else if (playerSelect === "rock" && computerSelection === "Rock") {
-                alert("It's a tie between player and computer");
-              } else if (
-                playerSelect === "paper" &&
-                computerSelection === "Scissors"
-              ) {
-                alert("You lose! Paper loses to Scissors");
-              } else if (playerSelect === "paper" && computerSelection === "Rock") {
-                alert("You win! Paper beats Rock!");
-              } else if (playerSelect === "paper" && computerSelection === "Paper") {
-                alert("It's a tie between player and computer!");
-              } else if (
-                playerSelect === "scissors" &&
-                computerSelection === "Scissors"
-              ) {
-                alert("It's a tie between player and computer");
-              } else if (
-                playerSelect === "scissors" &&
-                computerSelection === "Rock"
-              ) {
-                alert("You lose! Scissors loses to Rock");
-              } else if (
-                playerSelect === "scissors" &&
-                computerSelection === "Paper"
-              ) {
-                alert("You win! Scissors beats Paper!");
-              } else {
-                alert("Sorry bucko");
-              }
-            }
-    </script>
-  </body>
+<body>
+  <div class="box">
+    <h1>Choose an option:</h1>
+
+    <div class="buttons">
+      <button id="rock">Rock</button>
+      <button id="papers">Papers</button>
+      <button id="scissors">Scissors</button>
+    </div>
+  </div>
+
+
+
+</body>
+
 </html>
