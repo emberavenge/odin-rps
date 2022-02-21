@@ -49,5 +49,11 @@ h1 {
     transform: scale(1.25);
     cursor: pointer;
   }
+
+  #scoreboard {
+    border: 2px solid black;
+    width: 200px;
+    margin-top: 35px;
+  }
   
   
