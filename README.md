@@ -1,12 +1,18 @@
 # odin-rps
 
-Added a button to the website to allow the prompt alert to show up only when the button is pressed.
+Play rock paper scissors within your web browser
 
-Instructions on how to play:
+# Instructions on how to play:
 
-As of right now, pressing the "Play Rock Paper Scissors" button, and then typing your option in the pop-up window.
+1. Open this [website link](https://emberavenge.github.io/odin-rps/index.html) into your preferred web browser(Right click the blue text then choose "Copy" in the right  click menu).
 
-Stuff I learned:
+2. Click on one of the 3 buttons options (Rock, Paper Scissors) the game ends once either you or the CPU gets to 5 points.
+
+3. Enjoy!
+
+
+
+## Stuff I learned:
 - That it's important to look at your code and ask the computer what you're asking it to do. 
 
 - That problem solving is very very useful, that is, understanding the problem, planning the  problem, then dividing the problem into sub-problems.
